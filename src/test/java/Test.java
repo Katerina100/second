@@ -1,10 +1,8 @@
-import java.util.regex.Pattern;
-import org.junit.*;
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
-import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.Select;
-public class Tests  extends BaseRunner {
+import org.junit.Test;
+import org.openqa.selenium.By;
+import static org.junit.Assert.assertEquals;
+
+public class Test  extends BaseRunner {
     @Test
     public void testFirst(){
         driver.get("https://www.tinkoff.ru/mobile-operator/tariffs/");
