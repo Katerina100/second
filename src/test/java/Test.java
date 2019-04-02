@@ -11,7 +11,6 @@ public class Test  extends BaseRunner {
         driver.findElement(By.name("email")).click();
         driver.close();
     }
-    }
     @Test
     public void testSecond(){
         driver.findElement(By.name("fio")).click();
