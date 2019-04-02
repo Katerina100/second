@@ -13,7 +13,7 @@ public class Test  extends BaseRunner {
     }
     }
     @Test
-    public void testSecond() throws Exception {
+    public void testSecond(){
         driver.findElement(By.name("fio")).click();
         driver.findElement(By.name("fio")).clear();
         driver.findElement(By.name("fio")).sendKeys("блаоабовбепс");
