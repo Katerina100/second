@@ -9,6 +9,7 @@ public class BaseRunner {
     WebDriver driver;
     String baseUrl;
 
+    @Before
     public void setUp() {
         driver = new ChromeDriver();
         driver = BrowsersFactory.chrome.create();
