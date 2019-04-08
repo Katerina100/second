@@ -20,5 +20,4 @@ public class BaseRunner {
     public void tearDown() {
         driver.quit();
     }
-
 }
