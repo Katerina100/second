@@ -1,20 +1,23 @@
 # Second Project
-.............
+
 
 *Пререквизиты: Java 8, JDK,  Maven, Git*
 
-### Установка и запуск
+### Запуск
 - С помощью git клонировать проект в локальную директорию;
 - Внутри этой директории запустить терминал;
-- Мавеном инсталлировать зависимости проекта;
-- Cобрать мавеном проект;
-- Запустить исполняемый jar файл;
+- Мавеном запустить тесты;
 
 ```sh
 $ git clone git@github.com:Katerina100/second.git
-$ mvn clean install
-$ mvn package
-$ java -jar target/second-1.0-SNAPSHOT-jar-with-dependencies.jar
+$ mvn compile
+$ mvn test
 ```
+### Cтрока запуска maven
+ 1.0 Запуск тестов на браузере хром с командной строки  -Dtest=TestMobileForm -Dbrowser=chrome verify
+ ```sh
+ $ mvn -Dtest=TestMobileForm -Dbrowser=chrome verify
+ ```
+   
 ### Автор
 Екатерина Абрамова
