@@ -20,17 +20,6 @@ public enum  BrowsersFactory {
             options.addArguments("--headless");
             return new ChromeDriver(options);
         }
-    },
-
-    firefox {
-        public WebDriver create() {
-            System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
-            System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "./src/test/java/firefox_logs/log");
-
-            FirefoxOptions options = new FirefoxOptions();
-            options.addPreference("dom.webnotifications.enabled", false);
-            return new FirefoxDriver(options);
-        }
     };
 
     public WebDriver create() {
