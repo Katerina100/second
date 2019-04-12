@@ -34,10 +34,10 @@ public class GooglePageTestMobileForm extends BaseRunner{
                 });
 
 
-        String tinkoffJobLink = "https://www.tinkoff.ru/mobile-operator/tariffs/";
+        String tinkoffLink = "https://www.tinkoff.ru/mobile-operator/tariffs/";
 
-        wait.until(d -> xpathSearcherByText(tinkoffJobLink).size() > 0);
-        xpathSearcherByText(tinkoffJobLink).get(0).click();
+        wait.until(d -> xpathSearcherByText(tinkoffLink).size() > 0);
+        xpathSearcherByText(tinkoffLink).get(0).click();
 
         wait.until(d -> {
             boolean check = false;
