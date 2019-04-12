@@ -17,7 +17,6 @@ public class BaseRunner {
     }
 
     @After
-    public void tearDown() {
-        driver.quit();
+    public void tearDown() { driver.quit();
     }
 }

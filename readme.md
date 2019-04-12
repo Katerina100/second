@@ -16,7 +16,9 @@ $ mvn test
 ### Cтрока запуска maven
  1.0 Запуск тестов на браузере хром с командной строки  -Dtest=TestMobileForm -Dbrowser=chrome verify
  ```sh
+ $ mvn -Dtest=GooglePageTestMobileForm -Dbrowser=chrome verify
  $ mvn -Dtest=TestMobileForm -Dbrowser=chrome verify
+  $ mvn -Dtest=TestMobileFormRegion -Dbrowser=chrome verify
  ```
    
 ### Автор
