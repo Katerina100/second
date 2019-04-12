@@ -1,15 +1,18 @@
 import org.junit.Test;
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 import java.util.List;
 
 public class GooglePageTestMobileForm extends BaseRunner{
+    Logger logger = LoggerFactory.getLogger( GooglePageTestMobileForm.class);
     @Test
     public void test1() {
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+
         driver.get("https://www.google.ru/");
         driver.findElement(By.name("q")).sendKeys("Тинькофф мобайл тарифы");
         driver.findElements(By.xpath("//ul[@role='listbox']/li"));
@@ -52,6 +55,7 @@ public class GooglePageTestMobileForm extends BaseRunner{
 
 
         driver.close();
+        logger.info("Закрыта активная вкладка");
 
 
         driver.switchTo().window(driver.getWindowHandles().iterator().next());
